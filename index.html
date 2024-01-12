@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- Js -->
+    <script src="/js/all.min.js"></script>
+    <!-- Css -->
+    <link rel="stylesheet" href="/index.css">
+    <!-- Font chữ google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Định dạng ngày giờ -->
+    <script src="js/moment.js"></script>
+</head>
+
+
+<!-- Link video: https://www.youtube.com/watch?v=6oN-y2BZnHg&list=PLqQ6Lvascx2tfVJ5iLirMgbazxMH4Hfmw&index=6 -->
+
+
+<body>
+    <div class="container">
+        <div class="main-section">
+
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass search-icon" ></i>
+                <input type="text" name="search-city" id="search-input" placeholder="Tìm kiếm thành phố">
+            </div>
+
+            <div class="info-wrapper">
+                <p class="city-name">Quảng Ninh</p>
+                <p class="weather-state">Trời đẹp</p>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="weather-icon">
+                <p class="temperature">26</p>
+            </div>
+        </div>
+
+        <div class="additional-section">
+            <div class="row">
+                <div class="item">
+                    <div class="label">Mặt trời mọc</div>
+                    <div class="vaule sunrise">6h16</div>
+                </div>
+                <div class="item">
+                    <div class="label">Mặt trời lặn</div>
+                    <div class="vaule sunset">17h15</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item">
+                    <div class="label">Độ ẩm</div>
+                    <div class="vaule">
+                        <span class="humidity">64%</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="label">Gió</div>
+                    <div class="vaule">
+                        <span class="wind-speed">5.54</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
